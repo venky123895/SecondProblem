@@ -1,1 +1,1 @@
-# Geekster Weekly tes SecondProblem
+# Geekster Weekly test SecondProblem
