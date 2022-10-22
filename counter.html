@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            margin: 20%;
+        }
+        .left{
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: orange;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            
+        }
+        .right{
+            
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: green;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+        }
+        .count{
+            background-color: lightblue;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 7px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button class="left">-</button>
+        <h1 class="count">0</h1>
+        <button class="right">+</button>
+    </div>
+    <script>
+        let lbut=document.querySelector('.left');
+        const counter=document.querySelector('h1');
+        let rbut=document.querySelector('.right');
+        let num=0;
+        lbut.addEventListener('click',decreament);
+        rbut.addEventListener('click',increment);
+        function decreament(){
+            num=num-1;
+            counter.innerText=num;
+        }
+        function increment(){
+            num=num+1;
+            counter.innerText=num;
+        }
+    </script>
+</body>
+</html>
